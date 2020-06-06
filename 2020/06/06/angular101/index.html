@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"tp6hannah.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="What is AngularAngular is a javascript framework and development platform for creating single-page apps.The javascript code in Angular mainly use typescript, and typescript is a programming lanaguage">
+<meta property="og:type" content="article">
+<meta property="og:title" content="angular101">
+<meta property="og:url" content="https://tp6hannah.github.io/2020/06/06/angular101/index.html">
+<meta property="og:site_name" content="Yi-Han Chen&#39;s Blog">
+<meta property="og:description" content="What is AngularAngular is a javascript framework and development platform for creating single-page apps.The javascript code in Angular mainly use typescript, and typescript is a programming lanaguage">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://tp6hannah.github.io/images/angular101/angular101-1.png">
+<meta property="og:image" content="https://tp6hannah.github.io/images/angular101/angular101-2.png">
+<meta property="og:image" content="https://tp6hannah.github.io/images/angular101/angular101-3.png">
+<meta property="og:image" content="https://tp6hannah.github.io/images/angular101/angular101-4.png">
+<meta property="article:published_time" content="2020-06-06T02:19:04.000Z">
+<meta property="article:modified_time" content="2020-06-06T03:19:36.000Z">
+<meta property="article:author" content="Yi-Han Chen">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content=" java">
+<meta property="article:tag" content=" devops">
+<meta property="article:tag" content=" python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tp6hannah.github.io/images/angular101/angular101-1.png">
+
+<link rel="canonical" href="https://tp6hannah.github.io/2020/06/06/angular101/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>angular101 | Yi-Han Chen's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Yi-Han Chen's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://tp6hannah.github.io/2020/06/06/angular101/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yi-Han Chen">
+      <meta itemprop="description" content="a place for whatever I want to share">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yi-Han Chen's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          angular101
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-06-06 11:19:04 / Modified: 12:19:36" itemprop="dateCreated datePublished" datetime="2020-06-06T11:19:04+09:00">2020-06-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="What-is-Angular"><a href="#What-is-Angular" class="headerlink" title="What is Angular"></a>What is Angular</h2><p>Angular is a javascript framework and development platform for creating single-page apps.<br>The javascript code in Angular mainly use typescript, and typescript is a programming lanaguage which looks like javascript but has other functoin like following</p>
+<ul>
+<li>make javascript variable use strong type</li>
+<li>compile the code to javascript</li>
+<li>make javascript has the behavior like other object oriented programming language -&gt; class, interface</li>
+</ul>
+<h2 id="Requirement-amp-Prerequisites"><a href="#Requirement-amp-Prerequisites" class="headerlink" title="Requirement &amp; Prerequisites"></a>Requirement &amp; Prerequisites</h2><h3 id="Machine"><a href="#Machine" class="headerlink" title="Machine"></a>Machine</h3><ul>
+<li>nodejs, which include npm<br>you can install nodejs by brew<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ brew install node</span><br><span class="line"><span class="comment">##### check installation success #####</span></span><br><span class="line">$ node -v</span><br><span class="line"><span class="comment"># v12.16.2</span></span><br><span class="line">$ npm -v</span><br><span class="line"><span class="comment"># 6.14.4</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+
+</li>
+</ul>
+<h3 id="Human"><a href="#Human" class="headerlink" title="Human"></a>Human</h3><ul>
+<li>Basic knowledge of HTML, CSS and Javascript</li>
+</ul>
+<h2 id="Get-Angular-CLI-from-npm-to-start-a-angular-project"><a href="#Get-Angular-CLI-from-npm-to-start-a-angular-project" class="headerlink" title="Get Angular CLI from npm to start a angular project"></a>Get Angular CLI from npm to start a angular project</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g @angular/cli</span><br><span class="line"><span class="comment">##### check installation success #####</span></span><br><span class="line">$ ng version</span><br></pre></td></tr></table></figure>
+<p>and the result will similiar like this<br><img src="/images/angular101/angular101-1.png" alt=""></p>
+<h3 id="start-a-new-project"><a href="#start-a-new-project" class="headerlink" title="start a new project"></a>start a new project</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ng new my-fisrt-angular-app</span><br><span class="line">? Would you like to add Angular routing? Yes</span><br><span class="line">? Which stylesheet format would you like to use? CSS</span><br><span class="line"></span><br><span class="line">cd  my-fisrt-angular-app</span><br></pre></td></tr></table></figure>
+
+<h3 id="folder-structure-explaination"><a href="#folder-structure-explaination" class="headerlink" title="folder structure explaination"></a>folder structure explaination</h3><p>open the project in VScode or other IDE</p>
+<p><img src="/images/angular101/angular101-2.png" alt=""></p>
+<p>you can see many resources which were created by angular cli</p>
+<p>first of all in <code>src</code> folder, which are the main place we code our application</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">➜  my-fisrt-angular-app git:(master) cd src</span><br><span class="line">➜  src git:(master) tree</span><br><span class="line">.</span><br><span class="line">├── app</span><br><span class="line">│   ├── app-routing.module.ts</span><br><span class="line">│   ├── app.component.css</span><br><span class="line">│   ├── app.component.html</span><br><span class="line">│   ├── app.component.spec.ts</span><br><span class="line">│   ├── app.component.ts</span><br><span class="line">│   └── app.module.ts</span><br><span class="line">├── assets</span><br><span class="line">├── environments</span><br><span class="line">│   ├── environment.prod.ts</span><br><span class="line">│   └── environment.ts</span><br><span class="line">├── favicon.ico</span><br><span class="line">├── index.html</span><br><span class="line">├── main.ts</span><br><span class="line">├── polyfills.ts</span><br><span class="line">├── styles.css</span><br><span class="line">└── test.ts</span><br><span class="line"></span><br><span class="line">3 directories, 14 files</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>src/app</code> -&gt; code the html, css, js in here</li>
+<li><code>src/assets</code> -&gt; put the image or other material which the applicaion will use</li>
+<li><code>src/environments</code> -&gt; config for dev and production if needed</li>
+<li><code>src/tsconfig.json</code> -&gt; help our typescript code convert to javascript</li>
+<li><code>src/test.ts</code> -&gt; starting point for unit test</li>
+</ul>
+<h2 id="Exploring-Angular-CLI-Commands"><a href="#Exploring-Angular-CLI-Commands" class="headerlink" title="Exploring Angular CLI Commands"></a>Exploring Angular CLI Commands</h2><ul>
+<li><p><code>ng lint</code> helps us for checking the coding standard, and the standard is defined at <code>tslint.json</code></p>
+</li>
+<li><p><code>ng build</code> will generate the a folder called <code>dist</code>, in it are the compiled source file to let you put on web server</p>
+</li>
+<li><p><code>ng test</code> run the unit test for angular app<br>you can write the test case in the file which has the extention like <code>*.spec.ts</code></p>
+</li>
+<li><p><code>ng e2e</code> run the end-to-end test for your angular application<br>you can write the e2e test in <code>e2e/</code> folder</p>
+</li>
+</ul>
+<p>explore other angular cli command, you can <code>ng help</code></p>
+<p><img src="/images/angular101/angular101-3.png" alt=""></p>
+<p>and last but not least, try <code>ng serve</code> and reuqest <code>localhost:4200</code> in you broswer, then you can see what default angular application looks like!!<br><img src="/images/angular101/angular101-4.png" alt=""></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/24/java-map-usage/" rel="prev" title="Java Map & HashMap Usage">
+      <i class="fa fa-chevron-left"></i> Java Map & HashMap Usage
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-Angular"><span class="nav-number">1.</span> <span class="nav-text">What is Angular</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Requirement-amp-Prerequisites"><span class="nav-number">2.</span> <span class="nav-text">Requirement &amp; Prerequisites</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Machine"><span class="nav-number">2.1.</span> <span class="nav-text">Machine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Human"><span class="nav-number">2.2.</span> <span class="nav-text">Human</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Get-Angular-CLI-from-npm-to-start-a-angular-project"><span class="nav-number">3.</span> <span class="nav-text">Get Angular CLI from npm to start a angular project</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#start-a-new-project"><span class="nav-number">3.1.</span> <span class="nav-text">start a new project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#folder-structure-explaination"><span class="nav-number">3.2.</span> <span class="nav-text">folder structure explaination</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exploring-Angular-CLI-Commands"><span class="nav-number">4.</span> <span class="nav-text">Exploring Angular CLI Commands</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yi-Han Chen</p>
+  <div class="site-description" itemprop="description">a place for whatever I want to share</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yi-Han Chen</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
