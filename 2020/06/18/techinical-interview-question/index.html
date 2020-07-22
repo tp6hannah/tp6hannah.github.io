@@ -28,7 +28,7 @@
 <meta property="og:description" content="Java &amp; Object-oriented Programming (OOP)The questions I have been asked and I answered very bad, but want to improve even though I failed. I hope this article can also be the cheatsheet for future">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-18T11:23:28.000Z">
-<meta property="article:modified_time" content="2020-06-18T13:35:10.000Z">
+<meta property="article:modified_time" content="2020-06-19T02:14:41.000Z">
 <meta property="article:author" content="Yi-Han Chen">
 <meta property="article:tag" content="OOP">
 <meta property="article:tag" content="Basic">
@@ -49,6 +49,15 @@
 
   <title>Techinical Interview Questions | Yi-Han Chen's Blog</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173248662-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-173248662-1');
+      }
+    </script>
 
 
 
@@ -174,10 +183,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-06-18 20:23:28 / Modified: 22:35:10" itemprop="dateCreated datePublished" datetime="2020-06-18T20:23:28+09:00">2020-06-18</time>
+              <time title="Created: 2020-06-18 20:23:28" itemprop="dateCreated datePublished" datetime="2020-06-18T20:23:28+09:00">2020-06-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-06-19 11:14:41" itemprop="dateModified" datetime="2020-06-19T11:14:41+09:00">2020-06-19</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -194,7 +209,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.4k</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -222,7 +237,9 @@
 
 <h2 id="When-and-how-to-use-final"><a href="#When-and-how-to-use-final" class="headerlink" title="When and how to use final?"></a>When and how to use final?</h2><h2 id="Difference-between-StringBuilder-class-amp-StringBuffer"><a href="#Difference-between-StringBuilder-class-amp-StringBuffer" class="headerlink" title="Difference between StringBuilder class &amp; StringBuffer"></a>Difference between <code>StringBuilder</code> class &amp; <code>StringBuffer</code></h2><p><code>StringBuffer</code> is synchronized, <code>StringBuilder</code> is not.<br>When applicaiton or program only related to single thread, then use <code>StringBuilder</code>, otherwise use <code>StringBuffer</code></p>
 <p>by the way, there is similarity =&gt; Both StringBuilder and StringBuffer are mutable. </p>
-<h2 id="What-is-race-condition"><a href="#What-is-race-condition" class="headerlink" title="What is race condition"></a>What is race condition</h2><h1 id="Database"><a href="#Database" class="headerlink" title="Database"></a>Database</h1><h2 id="What-is-foreign-key"><a href="#What-is-foreign-key" class="headerlink" title="What is foreign key?"></a>What is foreign key?</h2><h2 id="DB-design"><a href="#DB-design" class="headerlink" title="DB design"></a>DB design</h2><h1 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h1><h2 id="Differnec-between-TCP-ans-UDP"><a href="#Differnec-between-TCP-ans-UDP" class="headerlink" title="Differnec between TCP ans UDP"></a>Differnec between TCP ans UDP</h2><h2 id="Try-explain-HTTP-and-TCP"><a href="#Try-explain-HTTP-and-TCP" class="headerlink" title="Try explain HTTP and TCP"></a>Try explain HTTP and TCP</h2><h2 id="TCP-3-way-handshake"><a href="#TCP-3-way-handshake" class="headerlink" title="TCP 3 way handshake"></a>TCP 3 way handshake</h2><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="SIGTERM-SIGKILL"><a href="#SIGTERM-SIGKILL" class="headerlink" title="SIGTERM SIGKILL"></a>SIGTERM SIGKILL</h2>
+<h2 id="What-is-race-condition"><a href="#What-is-race-condition" class="headerlink" title="What is race condition"></a>What is race condition</h2><h1 id="Database"><a href="#Database" class="headerlink" title="Database"></a>Database</h1><h2 id="What-is-foreign-key"><a href="#What-is-foreign-key" class="headerlink" title="What is foreign key?"></a>What is foreign key?</h2><h2 id="DB-design"><a href="#DB-design" class="headerlink" title="DB design"></a>DB design</h2><h1 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h1><h2 id="Differnec-between-TCP-ans-UDP"><a href="#Differnec-between-TCP-ans-UDP" class="headerlink" title="Differnec between TCP ans UDP"></a>Differnec between TCP ans UDP</h2><p>TCP guarantee data will be sent to target server, and with correct data.<br>UDP do not guarantee data will be sent to target server, and it is faster than TCP</p>
+<h2 id="Try-explain-HTTP-and-TCP"><a href="#Try-explain-HTTP-and-TCP" class="headerlink" title="Try explain HTTP and TCP"></a>Try explain HTTP and TCP</h2><p>HTTP is build on the base of TCP.<br>HTTP is in OSI application layer, solve how to package data.<br>TCP is in OSI transport layer, mainly solve how data will vbe transport in network.</p>
+<h2 id="TCP-3-way-handshake"><a href="#TCP-3-way-handshake" class="headerlink" title="TCP 3 way handshake"></a>TCP 3 way handshake</h2><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="SIGTERM-SIGKILL"><a href="#SIGTERM-SIGKILL" class="headerlink" title="SIGTERM SIGKILL"></a>SIGTERM SIGKILL</h2>
     </div>
 
     
